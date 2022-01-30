@@ -2,7 +2,7 @@
     "twelve": {
         "version": "v400.h",
         "date": "1643506623",
-        "variants": {
+        "variants": [
             "treble_a64_bvN": {
                 "size": "1273508984",
                 "url": "https://github.com/ponces/treble_build_pe/releases/download/v400.h/PixelExperience_arm32_binder64-ab-12.0-20220119-UNOFFICIAL.img.xz"
@@ -27,6 +27,6 @@
                 "size": "1419855936",
                 "url": "https://github.com/ponces/treble_build_pe/releases/download/v400.h/PixelExperience_arm64-ab-vndklite-12.0-20220119-UNOFFICIAL.img.xz"
             }
-        }
+        ]
     }
 }
