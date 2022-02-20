@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Pixel Os 12 Treble Buildbot"
+echo "Pixel os 12 Treble Buildbot"
 echo "ATTENTION: this script syncs repo on each run"
 echo "Executing in 5 seconds - CTRL-C to exit"
 echo ""
@@ -19,14 +19,14 @@ echo\
 START=`date +%s`
 BUILD_DATE="$(date +%Y%m%d)"
 WITHOUT_CHECK_API=true
-BL=$PWD/treble_build_PixelOs
+BL=$PWD/treble_build_pe
 BD=$HOME/builds
 VERSION="v401"
 
 if [ ! -d .repo ]
 then
     echo "Initializing PE workspace"
-repo init -u https://github.com/PixelOS-Pixelish/manifest -b twelve
+    repo init -u https://github.com/PixelOS-Pixelish/manifest -b twelve
     echo ""
 
     echo "Preparing local manifest"
@@ -36,7 +36,7 @@ repo init -u https://github.com/PixelOS-Pixelish/manifest -b twelve
 fi
 
 echo "Syncing repos"
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+repo sync -c --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
 echo ""
 
 echo "Setting up build environment"
