@@ -26,7 +26,7 @@ VERSION="v401"
 if [ ! -d .repo ]
 then
     echo "Initializing PE workspace"
-    repo init -u https://github.com/PixelExperience/manifest -b twelve
+    repo init -u https://github.com/PixelOS-Pixelish/manifest-b twelve
     echo ""
 
     echo "Preparing local manifest"
