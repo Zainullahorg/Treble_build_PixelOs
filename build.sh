@@ -26,7 +26,7 @@ VERSION="v401"
 if [ ! -d .repo ]
 then
     echo "Initializing PE workspace"
-    repo init -u https://github.com/PixelOS-Pixelish/manifest-b twelve
+repo init -u https://github.com/PixelOS-Pixelish/manifest -b twelve
     echo ""
 
     echo "Preparing local manifest"
@@ -36,7 +36,7 @@ then
 fi
 
 echo "Syncing repos"
-repo sync -c --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo ""
 
 echo "Setting up build environment"
