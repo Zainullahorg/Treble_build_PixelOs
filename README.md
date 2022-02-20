@@ -8,7 +8,7 @@ To get started with building Pixel OS GSI, you'll need to get familiar with [Git
     ```
 - Clone this repo:
     ```
-    git clone https://github.com/Zainullahorg/Treble_build_pe -b twelve
+    git clone https://github.com/Zainullahorg/treble_build_pe -b twelve
     ```
 - Finally, start the build script:
     ```
