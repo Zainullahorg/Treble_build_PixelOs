@@ -17,7 +17,8 @@ To get started with building Pixel Experience GSI, you'll need to get familiar w
 
 ## Credits
 These people have helped this project in some way or another, so they should be the ones who receive all the credit:
-- [Pixel Experience Team](https://download.pixelexperience.org/about)
+- [Pixel Experience Team](pixelos.vercel.app)
+- [PixelOs Team](https://download.pixelexperience.org/about)
 - [Ponces](https://github.com/ponces)
 - [phhusson](https://github.com/phhusson)
 - [AndyYan](https://github.com/AndyCGYan)
