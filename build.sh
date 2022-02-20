@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Pixel os 12 Treble Buildbot"
+echo "Pixel Experience 12 Treble Buildbot"
 echo "ATTENTION: this script syncs repo on each run"
 echo "Executing in 5 seconds - CTRL-C to exit"
 echo ""
@@ -79,7 +79,15 @@ buildVariant() {
     mv $OUT/system.img $BD/system-$1.img
     buildSlimVariant $1
     rm -rf out/target/product/phhgsi*
+}
 
+buildSlimVariant() {
+    wget https://gist.github.com/ponces/891139a70ee4fdaf1b1c3aed3a59534e/raw/slim.patch -O /tmp/slim.patch
+    (cd vendor/gapps && git am /tmp/slim.patch)
+    lunch ${1}-userdebug
+    make -j$(nproc --all) systemimage
+    mv $OUT/system.img $BD/system-$1-slim.img
+    (cd vendor/gapps && git reset --hard HEAD~1)
 }
 
 buildSasImages() {
