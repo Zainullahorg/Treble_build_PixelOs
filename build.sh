@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Pixel Experience 12 Treble Buildbot"
+echo "Pixel Os 12 Treble Buildbot"
 echo "ATTENTION: this script syncs repo on each run"
 echo "Executing in 5 seconds - CTRL-C to exit"
 echo ""
@@ -19,7 +19,7 @@ echo\
 START=`date +%s`
 BUILD_DATE="$(date +%Y%m%d)"
 WITHOUT_CHECK_API=true
-BL=$PWD/treble_build_pe
+BL=$PWD/treble_build_PixelOs
 BD=$HOME/builds
 VERSION="v401"
 
